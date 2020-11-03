@@ -1,0 +1,13 @@
+{
+  "name": "lerna-monorepo",
+  "private": true,
+  "author": "Vivek Mishra",
+  "main": "packages/app/index.js",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
