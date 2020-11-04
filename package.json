@@ -4,6 +4,20 @@
   "author": "Vivek Mishra",
   "main": "packages/app/index.js",
   "license": "ISC",
+  "scripts": {
+    "build": "lerna run build",
+    "build:a": "lerna run build --scope @techt/a", 
+    "build:b": "lerna run build --scope @techt/b",
+    "build:app": "lerna run build --scope @techt/app",
+    "build:a:b": "lerna run build --scope={@techt/a,@techt/b}",
+    "test": "lerna run test",
+    "test:a": "lerna run test --scope @techt/a",
+    "test:b": "lerna run test --scope @techt/b",
+    "test:a:b": "lerna run test --scope={@techt/a,@techt/b}",
+    "test:app": "lerna run test --scope @techt/app",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   },
